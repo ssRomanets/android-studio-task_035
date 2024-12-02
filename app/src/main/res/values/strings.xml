@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Task_035</string>
+    <string name="app_key">3f52db1137ed90e28f8b90b84f09966e</string>
+    <string name="exit">Exit</string>
+    <string name="feels_like">feels_like</string>
+    <string name="grnd_level">grnd_level</string>
+    <string name="humidity">humidity</string>
+    <string name="pressure">pressure</string>
+    <string name="sea_level">sea_level</string>
+    <string name="temp">temp</string>
+    <string name="temp_max">temp_max</string>
+    <string name="temp_min">temp_min</string>
+</resources>

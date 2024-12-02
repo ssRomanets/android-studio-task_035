@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPageFragment"
+    android:background="@drawable/login_background"
+    android:alpha="0.9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutViewPagerLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewIV"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/cityCaptionET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:hint="caption City"
+            android:textColor="@color/background"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/feelsLikeTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/feels_like"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/grndLevelTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/grnd_level"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/humidityTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/humidity"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/pressureTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/pressure"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/seaLevelTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/sea_level"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/tempTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/temp"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tempMaxTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/temp_max"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/tempMinTV"
+                style="@style/TextAppearance.AppCompat.Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:hint="@string/temp_min"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loadBTN"
+        android:layout_marginTop="15dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Загрузить"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_corner"
+        android:padding="10dp"
+        />
+</LinearLayout>
